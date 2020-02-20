@@ -1,5 +1,7 @@
 import random
 
+case = 0
+
 # Main list sequences, only one word no sentences
 words = ['Horse']
 
@@ -7,7 +9,10 @@ words = ['Horse']
 word = random.choice(words)
 let = len(word) - (len(word) - 1)
 first_let = word[:let]
-first_let = first_let.lower()
+if case = 0:
+    first_let = first_let.lower()
+elif case = 1:
+    first_let = first_let.upper()
 
 # Remove first letter
 word_noLet = word[let:]
